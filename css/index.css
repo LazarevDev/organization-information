@@ -1,0 +1,126 @@
+header{
+    /* background: #006eff; */
+    display: flex;
+    justify-content: center;
+    background: url('../img/bg.jpg') no-repeat center / cover;
+    height: auto;
+    position: relative;
+    border-radius: 0 0 60px 60px;
+}
+
+.mask{
+    background: #006effe3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    border-radius: 0 0 60px 60px;
+}
+
+.headerContent{
+    padding: 120px 0;
+    z-index: 1;
+    position: relative;
+}
+
+.headerTitle{
+    text-align: center;
+    color: #fff;
+}
+
+.headerTitle h1{
+    font-size: 52px;
+}
+
+.headerTitle p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.formContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: -35px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    width: 720px;
+    margin-top: 125px;
+    position: relative;
+  
+}
+
+.input{
+    width: 720px;
+    padding: 20px;
+    font-size: 20px;
+    color: #666;
+    border-radius: 10px;
+    background: #fafafa;
+    border: 1px solid #f2f2f2;
+}
+
+.suggestions{
+    display: none;
+    position: absolute;
+    top: 60px;
+    max-height: 320px;
+    background: #fff;
+    /* width: calc(100% - 42px); */
+    width: 100%;
+    z-index: -1;
+    padding: 20px 0;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #f2f2f2;
+    transition: .4s;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.suggestions div{
+    display: inline-block;
+    width: 100%;
+    color: #666;
+    /* margin: 5px 0; */
+    padding: 20px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.suggestions div:hover{
+    background: #f2f2f2;
+}
+
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+.organizationDetails {
+    width: 100%;
+    margin-top: 60px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.organizationDetails h2{
+    font-size: 24px;
+    color: #006eff;
+}
+
+.organizationDetails p{
+    margin-top: 10px;
+    color: #666;
+}
+
+.hidden {
+    display: none;
+}
